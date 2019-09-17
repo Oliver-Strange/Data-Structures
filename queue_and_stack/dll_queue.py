@@ -11,6 +11,7 @@ class Queue:
 
     def enqueue(self, value):
         self.storage.add_to_tail(value)
+        self.size += 1
 
     def dequeue(self):
         if len(self.storage) is not 0:
@@ -21,4 +22,4 @@ class Queue:
             return None
 
     def len(self):
-        return self.size
+        return self.storage.__len__()

@@ -141,7 +141,7 @@ class DoublyLinkedList:
         else:
             node.delete()
             self.length -= 1
-            self.add_to_tail(value)
+        self.add_to_tail(value)
 
     """Removes a node from the list and handles cases where
   the node was the head or the tail"""
